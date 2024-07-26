@@ -18,22 +18,17 @@
       overflow-y: scroll; /* Allow vertical scrolling */
       -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
     }
-    iframe {
+    embed {
       width: 100%;
-      height: calc(100vh - 50px); /* Adjust height to ensure full viewport usage */
+      height: 100vh; /* Use viewport height to ensure full height */
       border: none;
-    }
-    @media (max-width: 600px) {
-      iframe {
-        height: calc(100vh - 50px); /* Smaller height for small screens */
-      }
     }
   </style>
 </head>
 <body>
 
 <div class="pdf-container">
-  <iframe src="Assignment 2.pdf#view=FitH" type="application/pdf"></iframe>
+  <embed src="Assignment 2.pdf" type="application/pdf" />
 </div>
 
 </body>
